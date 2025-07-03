@@ -9,3 +9,7 @@ While working in the project (in VSCode) the custom fork is used
 # Context
 
 This is an expirement in extending the VSCode+Copilot [collaborative frame](./collab_frame_context.md) for additional uses, roles and facets
+
+# Refs
+
+[vscode-copilot-chat Repo](https://github.com/microsoft/vscode-copilot-chat)
