@@ -25,11 +25,16 @@ npm run watch    # Continuous rebuilds on file changes
 ```
 
 ### 2. Testing Our Fork in Codespaces
-**Our approach (about to test):**
-1. Open the `copilot-fork` folder in current Codespaces window
-2. Press `F5` or use "Run and Debug" → "Launch Copilot Extension - Watch Mode"
-3. **Unknown**: How this works in browser-based Codespaces - need to test!
-4. Goal: Load our custom extension instead of default Copilot Chat
+**Our approach:**
+1. **First**: Open this file: `/workspaces/coer/copilot-fork/src/extension/extension/vscode/extension.ts`
+2. **Then**: Press `F5` or use "Run and Debug" → "Launch Copilot Extension - Watch Mode"
+3. VSCode will recognize you're debugging an extension (not markdown/JSON)
+4. **Goal**: Load our custom extension in development mode
+
+**Why this specific file:**
+- Main extension activation file (`extension.ts`)
+- Contains the shared activation code for the extension
+- VSCode uses the file type to determine debug mode
 
 **Alternative if F5 doesn't work in Codespaces:**
 - Package as VSIX and install manually
