@@ -1,6 +1,6 @@
 {
 	"name": "copilot-chat",
-	"displayName": "GitHub Copilot Chat",
+	"displayName": "GitHub Copilot Chat (COER Fork)",
 	"description": "AI chat features powered by Copilot",
 	"version": "0.29.0",
 	"build": "1",

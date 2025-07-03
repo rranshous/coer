@@ -16,8 +16,13 @@
 ```bash
 cd /workspaces/coer/copilot-fork
 npm install  # ✅ Completed successfully
+npm run get_token  # ✅ Got GitHub OAuth token
 npm run compile  # ✅ Build tested, takes ~15s
 ```
+
+**Authentication Requirements:**
+- ✅ **GitHub OAuth Token**: Required for our external development (completed)
+- ❌ **Microsoft Azure Secrets**: Only needed for Microsoft internal development (`get_env`)
 
 **For ongoing development:**
 ```bash

@@ -26,7 +26,9 @@
 - [x] Examine main extension files (`src/extension.ts`, `src/base/extension.ts`)
 - [x] Figure out build and development workflow
 - [x] Test building the extension (✅ Build successful in ~15s)
-- [ ] Test launching extension in development mode
+- [x] Test launching extension in development mode (✅ F5 works in Codespaces!)
+- [x] Make first modification (✅ Changed displayName to "COER Fork")
+- [ ] Verify the change is visible in extension development host
 - [ ] Document how to replace default Copilot Chat with our fork
 
 #### 📋 Next Steps
@@ -56,10 +58,22 @@
 3. Watch mode rebuilds automatically on changes
 4. Reload extension window to see updates
 
+#### Codespaces Success! 🎉
+- **F5 works in Codespaces** - Opens new browser tab with Extension Development Host
+- **Orange status bar** indicates debug mode
+- **Need specific TypeScript file open** - Used `/workspaces/coer/copilot-fork/src/extension/extension/vscode/extension.ts`
+- **Authentication issue** - Sign-in to Copilot didn't work in dev host (expected)
+
+#### First Modification ✅
+- **Changed**: `package.json` displayName to "GitHub Copilot Chat (COER Fork)"
+- **Built successfully** with `npm run compile` 
+- **Next**: Reload extension development host to verify change
+
 #### Key Questions
 - ✅ How does the build system work? - Uses esbuild + TypeScript
 - ✅ What's the development/testing workflow? - F5 launches test window
-- 🔄 How do we swap extensions during development? - Still investigating
+- ✅ How does F5 work in Codespaces? - Opens new browser tab!
+- 🔄 Can we see our modification? - Testing reload now
 
 ### Challenges
 - TBD
