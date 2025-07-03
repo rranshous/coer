@@ -1,0 +1,27 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build Copilot Fork",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"run",
+				"compile"
+			],
+			"group": "build",
+			"options": {
+				"cwd": "${workspaceFolder}/copilot-fork"
+			},
+			"problemMatcher": [
+				"$esbuild"
+			],
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": false,
+				"panel": "shared"
+			}
+		}
+	]
+}
